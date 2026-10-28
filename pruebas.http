@@ -1,0 +1,20 @@
+### CREATE - POST
+POST http://127.0.0.1:8001/api/libros/
+Content-Type: application/json
+
+{"titulo": "Cien años de soledad", "autor": "Gabriel García Márquez", "anio": 1967}
+
+### READ - GET lista
+GET http://127.0.0.1:8001/api/libros/
+
+### READ - GET detalle
+GET http://127.0.0.1:8001/api/libros/1/
+
+### UPDATE - PUT
+PUT http://127.0.0.1:8001/api/libros/1/
+Content-Type: application/json
+
+{"disponible": false}
+
+### DELETE
+DELETE http://127.0.0.1:8001/api/libros/1/
